@@ -43,4 +43,7 @@ we will need to add something on the package.json file :
 }
 
 
-6. T
+6. To start actually benificying from nodemon features we will need also to add a line in the package.json file : 
+on scripts : 
+
+
