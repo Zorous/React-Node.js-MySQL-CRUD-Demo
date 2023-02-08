@@ -7,6 +7,7 @@ const app = express();
 
 const db = mysql.createConnection({
     host : "localhost",
+    port : "3307",
     user : "root",
     password:"",
     database : "react-mysql demo"
@@ -17,7 +18,7 @@ app.get("/", (req,res)=>{
 })
 
 app.get("/books",(req,res)=>{
-    const q = "SELECT * FROM users";
+    const q = "SELECT * FROM test";
     db.query(q,(err,data)=>{
         if(err) return res.json(err);
         return res.json(data)
