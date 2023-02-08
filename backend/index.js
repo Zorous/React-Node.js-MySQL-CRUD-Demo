@@ -12,6 +12,10 @@ const db = mysql.createConnection({
     database : "react-mysql demo"
 })
 
+app.get("/", (req,res)=>{
+    res.json('hello this is the backend')
+})
+
 
 app.listen(8800,()=>{
     console.log('connected to backend')
