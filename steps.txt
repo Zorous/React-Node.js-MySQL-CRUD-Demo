@@ -5,7 +5,7 @@
 
 >>nodemon enables hard reloads when we do a change
 
-3. create a main js file "index.js" and settle things up :
+3. create a main js file "index.js" (it will be our entry point) and settle things up :
 >>
 import express from "express";
 
@@ -45,5 +45,8 @@ we will need to add something on the package.json file :
 
 6. To start actually benificying from nodemon features we will need also to add a line in the package.json file : 
 on scripts : 
-
-
+>>
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   >>>>> "start" : "nodemon index.js" <<<<<
+  },
