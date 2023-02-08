@@ -1,0 +1,46 @@
+1. separate front end from backend : so create a client folder and a backend folder
+2. Initialize npm and install the necessary packages : 
+    * npm i -y
+    * npm i express mysql nodemon
+
+>>nodemon enables hard reloads when we do a change
+
+3. create a main js file "index.js" and settle things up :
+>>
+import express from "express";
+
+
+
+const app = express();
+
+
+
+app.listen(8800,()=>{
+    console.log('connected to backend')
+})
+
+4. we need to listen to a server
+
+5. to make the express module importable like the following up there,
+we will need to add something on the package.json file :
+>> {
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  >>>>>>>>>>>"type" : "module",<<<<<<<<<<<<
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
+
+
+6. T
